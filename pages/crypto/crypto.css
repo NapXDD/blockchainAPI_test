@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.coin-logo{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 56.25%;
+}
+
+.coin-card-container{
+    padding: 16px;
+    width: 350px;
+    box-shadow: 0rem 0rem 1rem black;
+    background-color: #1b1b2f;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.coin-card-content{
+    padding: 1rem;
+    transition: all 500ms;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.coin-name{
+    color: white;
+    font-size: 34px;
+    text-align: center;
+}
+
+.lastest-price{
+    color: #f2a365;
+    font-size: 16px;
+}
+
+.info-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin-infos-container{
+    padding: 16px;
+    font-size: 14px;
+}
+
+.info-title{
+    color: white;
+}
+
+.info-value{
+    color: #f2a365;
+}
+
+.coin-card-container a{
+    text-decoration: none;
+}
+
+.coin-card-content:hover{
+    background-color: #323256;
+}
+
+.coins-list{
+    width: 1110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.coins-list-container{
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.crypto-container{
+    position: relative;
+}
+
+body{
+    background-color: #162447;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chart.css">
+    <link rel="stylesheet" href="/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.1/chart.umd.js"></script>
+</head>
+<body>
+    <nav class="navbar-container">
+        <div class="navbar-content">
+            <div class="logo-icon-container">
+                <div class="logo-icon-content navbar"><a href="/index.html">crypto icon</a></div>
+            </div>
+            <div class="navbar-right">
+                <div class="crypto-page navbar"><a href="/pages/crypto/crypto.html">crypto</a></div>
+                <div class="contact-page navbar"><a href="/pages/contact/contact.html">contact</a></div>
+            </div>
+        </div>
+    </nav>
+    <canvas id="cookieChart"></canvas>
+</body>
+<script src="/component/chart/coinChart.js" type="module" ></script>
+<script src="/utilities/getCurrentURL.js" type="module"></script>
+<script src="/utilities/getCoin.js" type="module"></script>
+</html>
