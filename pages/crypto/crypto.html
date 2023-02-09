@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="crypto.css">
     <link rel="stylesheet" href="/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+    <script src="animation.js" defer></script>
 </head>
 <body>
     <nav class="navbar-container">
@@ -20,8 +22,10 @@
             </div>
         </div>
     </nav>
-    <div class="search-form">
-        <form action=""></form>
+    <div class="search-form-container">
+        <form action="" class="search-form">
+            <input type="text" id="search-input">
+        </form>
     </div>
     <div class="coins-list-container">
         <div class="coins-list"></div>
@@ -36,4 +40,6 @@
 <script src="/component/card/coinCard.js" type="module"></script>
 <script src="coinList.js" type="module"></script>
 <script src="/utilities/getCoins.js" type="module"></script>
+<script src="/utilities/searchCoin.js" type="module"></script>
+<script src="main.js" type="module"></script>
 </html>

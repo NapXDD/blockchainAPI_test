@@ -14,13 +14,27 @@ let yValues = [];
 let config = {
     type: "line",
     data: {
-      labels: xValues,
+      labels: yValues,
       datasets: [{
-        backgroundColor: "rgba(0,0,0,1.0)",
-        borderColor: "rgba(0,0,0,0.1)",
-        data: yValues
+        label: "Coin price",
+        data: xValues,
+        fill: false,
+        borderColor: 'rgb(75, 192, 192)',
+        tension: 0.1
       }]
-    }
+    },
+    options: {
+      plugins: {
+          legend: {
+              labels: {
+                  // This more specific font property overrides the global property
+                  font: {
+                      size: 20
+                  }
+              }
+          }
+      }
+  }
 }
 
 let cookieChart = new Chart(canvasElement, config)
@@ -34,10 +48,12 @@ function coinChart(){
         return data
     })
     .then(data => {
-        xValues.push(data.price)
-        yValues.push(Date.now())
-        cookieChart.destroy()
-        cookieChart = new Chart(canvasElement, config)
+      let date = new Date()
+      let newTime = date.toLocaleTimeString().replace("AM","").replace("PM","")
+      xValues.push(data.price)
+      yValues.push(newTime)
+      cookieChart.destroy()
+      cookieChart = new Chart(canvasElement, config)
     })
 }
 

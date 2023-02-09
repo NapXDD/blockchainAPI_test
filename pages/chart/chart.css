@@ -6,11 +6,18 @@
 
 #cookieChart{
     width: 1000px !important;
-    height: 800px !important;
+    height: 580px !important;
     padding-top: 100px;
 }
 
 canvas{
     aspect-ratio: unset;
+}
+
+.chart-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
