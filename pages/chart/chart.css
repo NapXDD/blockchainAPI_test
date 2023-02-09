@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
-Canvas#cookieChar{
-    width: 500px;
-    height: 400px;
+#cookieChart{
+    width: 1000px !important;
+    height: 800px !important;
+    padding-top: 100px;
 }
+
+canvas{
+    aspect-ratio: unset;
+}
+
