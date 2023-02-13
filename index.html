@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <nav class="navbar-container">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+    defer
+    ></script>
+    <script src="slider.js" defer></script>
+  </head>
+  <body>
+    <div class="document-wrapper">
+      <nav class="navbar-container">
         <div class="navbar-content">
-            <div class="logo-icon-container">
-                <div class="logo-icon-content navbar"><a href="/index.html">crypto icon</a></div>
+          <div class="logo-icon-container">
+            <div class="logo-icon-content navbar">
+              <a href="/index.html"><i class="fa-brands fa-bitcoin fa-2xl"></i></a>
             </div>
-            <div class="navbar-right">
-                <div class="crypto-page navbar"><a href="/pages/crypto/crypto.html">crypto</a></div>
-                <div class="contact-page navbar"><a href="/pages/contact/contact.html">contact</a></div>
+          </div>
+          <div class="navbar-right">
+            <div class="crypto-page navbar">
+              <a href="/pages/crypto/crypto.html">crypto</a>
             </div>
+            <div class="contact-page navbar">
+              <a href="/pages/contact/contact.html">contact</a>
+            </div>
+          </div>
         </div>
-    </nav>
-    <section class="section-container">
+      </nav>
+      <section class="section-container">
         <div class="section-content">
-            <div class="slider-container">
-                <div class="slider" id="slider01">
-                    <img src="" alt="slider01">
-                </div>
-                <div class="slider" id="slider02">
-                    <img src="" alt="slider01">
-                </div>
-                <div class="slider" id="slider03">
-                    <img src="" alt="slider01">
-                </div>
+          <div class="slider-container">
+            <div class="slide-wrapper"> 
+              <div class="slider" id="sliderLoopEnd">
+                <img src="asset\banner\313914924_111749498404751_825655141191919889_n.jpg" alt="slider01" />
+              </div>
+              <div class="slider" id="slider01">
+                <img src="asset\banner\312493821_672485130847124_6327911949735560146_n.jpg" alt="slider01" />
+              </div>
+              <div class="slider" id="slider02">
+                <img src="asset\banner\313424429_1826558567678353_8180878365386644078_n.jpg" alt="slider01" />
+              </div>
+              <div class="slider" id="slider03">
+                <img src="asset\banner\313914924_111749498404751_825655141191919889_n.jpg" alt="slider01" />
+              </div>
+              <div class="slider" id="sliderLoopStart">
+                <img src="asset\banner\312493821_672485130847124_6327911949735560146_n.jpg" alt="slider01" />
+              </div>
             </div>
+          </div>
+          <button class="prev-btn">prev</button>
+          <button class="next-btn">next</button>
         </div>
-        <div class="crypto-button-container">
-            <button></button>
-        </div>
-    </section>
-    <footer class="footer-container">
+      </section>
+      <footer class="index-footer-container">
         <div class="footer-content">
-            <p>Hello, here is the crypto realtime's space!</p>
-            <p>Feel free to contact with me here</p>
+          <p>Hello, here is the crypto realtime's space!</p>
+          <p>Feel free to contact with me <a href="/pages/contact/contact.html">here</a></p>
         </div>
-    </footer>
-</body>
-<script src="slider.js"></script>
-</html> 
+      </footer>
+    </div>
+  </body>
+</html>

@@ -9,6 +9,7 @@ searchBar.addEventListener("keypress", (event) => {
         searchCoin(searchBar.value)
         .then(
             coins => {
+                let tl = gsap.timeline()
                 searchBar.value = ""
                 coinsList.innerHTML = ""
                 coins.map(coin => {
