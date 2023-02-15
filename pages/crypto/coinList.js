@@ -24,6 +24,9 @@ function coinList(){
             let cardElement = coinCard(data)
             element.appendChild(cardElement)
         })
+        let tlcoinslist = gsap.timeline()
+        tlcoinslist.to(".coins-list", {duration: 1, opacity: 1})
+        .to(".crypto-footer-container", {duration: 1, opacity: 1})
     })
 }
 

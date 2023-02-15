@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html.index{
+    overflow: hidden;
+}
+
 .navbar-container{
     background-color: #121212;
     position: fixed;
@@ -37,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 body{
@@ -51,7 +55,6 @@ body{
     height: 100%;
     justify-content: center;
     align-items: center;
-    padding-top: 25px;
 }
 
 .logo-icon-container{
@@ -79,7 +82,7 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 50px;
+    padding: 25px;
     color: white;
     text-align: center;
 }
@@ -87,11 +90,13 @@ body{
 .prev-btn{
     position: absolute;
     top: 50%;
+    transform: translate(0, -50%);
     left: 0;
 }
 
 .next-btn{
     top: 50%;
+    transform: translate(0, -50%);
     position: absolute;
     right: 0;
 }
@@ -99,4 +104,26 @@ body{
 .document-wrapper{
     height: 100vh;
     position: relative;
+}
+
+footer{
+    background-color: #121212;
+}
+
+button.next-btn{
+    background: url(https://priconne-redive.jp/ele-wp/wp-content/themes/redive/images/top/arrow_right.png) no-repeat 0 0;
+    width: 61px;
+    height: 77px;
+    border: none;
+}
+
+button.prev-btn{
+    background: url(https://priconne-redive.jp/ele-wp/wp-content/themes/redive/images/top/arrow_left.png) no-repeat 0 0;
+    width: 61px;
+    height: 77px;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
 }

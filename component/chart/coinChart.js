@@ -24,14 +24,45 @@ let config = {
       }]
     },
     options: {
+      scales:{
+        y: {
+          grid: {
+            color: '#fff',
+          },
+          ticks: {
+            color: '#fff',
+            font: {
+              family: '"Fira Sans", sans-serif',
+              weight: 600,
+              size: 18,
+            },
+          }
+        },
+        x: {
+          grid: {
+            color: '#fff',
+          },
+          ticks: {
+            color: '#fff',
+            // display: false,
+            font: {
+                family: '"Fira Sans", sans-serif',
+                weight: 600,
+                size: 15,
+            },
+        },
+        }
+      },
+      responsive: true,
       plugins: {
           legend: {
               labels: {
                   // This more specific font property overrides the global property
+                  color: '#fff',
                   font: {
-                      size: 20
+                      size: 20,
                   }
-              }
+              },
           }
       }
   }
