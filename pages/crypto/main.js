@@ -1,8 +1,11 @@
 import searchCoin from "../../utilities/searchCoin.js"
+import coinList from "./coinList.js"
 
 let coinsList = document.querySelector(".coins-list")
 let searchBar = document.querySelector("#search-input")
 let footerElement = document.querySelector(".crypto-footer-container")
+
+coinList()
 
 searchBar.addEventListener("keypress", (event) => {
     if(event.keyCode === 13){

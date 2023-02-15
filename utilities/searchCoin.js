@@ -2,7 +2,7 @@ import getCoins from "./getCoins.js";
 import coinCard from "../component/card/coinCard.js";
 
 export default async function searchCoin(coinName) {
-  let url = "https://api.coinranking.com/v2/coins";
+  let url = "https://api.coinranking.com/v2/coins/";
   let array = [];
   let card = [];
 

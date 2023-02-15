@@ -72,7 +72,6 @@ let cookieChart = new Chart(canvasElement, config)
 cookieChart.destroy()
 
 function coinChart(){
-    console.log("lmao")
     getCoin(uuid)
     .then(res => {
         let data = res.data.coin

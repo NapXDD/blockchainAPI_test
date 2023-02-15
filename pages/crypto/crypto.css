@@ -154,6 +154,27 @@ html.crypto::-webkit-scrollbar{
     display: none;
 }
 
+.crypto-page.navbar a{
+    color: #307af7
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+.back-to-top img{
+    width: 45px;
+    background-color: #7C7C7C;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 1125px) and ((min-width: 740px)){
     #search-input{
         text-indent: 50px;

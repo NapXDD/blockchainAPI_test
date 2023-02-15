@@ -2,7 +2,7 @@ import coinCard from "../../component/card/coinCard.js";
 import getCoins from "../../utilities/getCoins.js";
 
 //when load the crypto page, the javascript fetch the api, turn it to element and add to crypto page
-function coinList(){
+export default function coinList(){
     let url = 'https://api.coinranking.com/v2/coins'
 
     const options = {
@@ -29,5 +29,3 @@ function coinList(){
         .to(".crypto-footer-container", {duration: 1, opacity: 1})
     })
 }
-
-coinList()
