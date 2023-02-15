@@ -1,4 +1,5 @@
 # blockchainAPI_test
+<p>Check out the api coin ranking: <a href="https://developers.coinranking.com/api"></a>https://developers.coinranking.com/api</p>
 <p>You can check the demo <a href="https://napxdd.github.io">here</a>, or clone the repo then use the live server.</p>
 
 <h1>Landing page:</h1>
