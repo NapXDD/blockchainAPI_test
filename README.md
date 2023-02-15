@@ -35,6 +35,7 @@
 
 <h2>Coin's price chart:</h2>
 <p>When press on a coin card, the web site will redirect you to the chart price page</p>
+<p>The y axe show the price of the coin and the x axe show the time when the api fetched</p>
 <p>the price will update the price every ten second</p>
 
 <img src="asset\readme\chart_coin.jpg">
