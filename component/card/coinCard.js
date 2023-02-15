@@ -42,7 +42,7 @@ export default function coinCard(data){
     //add info to element
     let price = Number(data.price)
     price = price.toFixed(5)
-    aElement.href = `/pages/chart/chart.html?${data.uuid}` //create a link to access to the chart of each coin
+    aElement.href = `./pages/chart/chart.html?${data.uuid}` //create a link to access to the chart of each coin
     coinName.innerHTML = data.name 
     lastestPrice.innerHTML = `Lastest price: ${price}$`
     coin24hInfoTitle.innerHTML = "24 Hour Price Change:"
